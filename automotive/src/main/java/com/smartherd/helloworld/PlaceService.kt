@@ -1,7 +1,6 @@
 package com.smartherd.helloworld;
 
 import androidx.car.app.*
-import androidx.car.app.model.*
 import androidx.car.app.validation.HostValidator
 import com.google.gson.Gson
 

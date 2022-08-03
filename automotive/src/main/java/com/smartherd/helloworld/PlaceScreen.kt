@@ -15,8 +15,7 @@ class PlaceScreen(carContext: CarContext, val stations: StationList) : Screen(ca
     }
 
     fun placeTemplateBuilder(stations: StationList, rowItemLimit: Int, screenManager : ScreenManager) : PlaceListMapTemplate {
-//    val headerAction = Action.BACK
-//
+
 
         val listStations = stations.stations.subList(0,rowItemLimit-1)
         val titleList = listStations.map { it.title.toString() }
@@ -26,14 +25,6 @@ class PlaceScreen(carContext: CarContext, val stations: StationList) : Screen(ca
             screenManager.push(SettingsScreen(carContext))
         }
             .build()
-//        val searchAction = Action.Builder().setIcon(
-//            CarIcon.Builder()
-//        ).setOnClickListener {
-//            screenManager.push(SearchScreen(carContext, titleList))
-//        }.build()
-//    val zoomInAction = Action.Builder().setTitle("Zoom In").build()
-//    val zoomOutAction = Action.Builder().setTitle("Zoom out").build()
-
 
 
         val actionStrip = ActionStrip.Builder()
@@ -48,10 +39,9 @@ class PlaceScreen(carContext: CarContext, val stations: StationList) : Screen(ca
             .setMarker(
                 PlaceMarker.Builder()
                 .build()).build() }
-//
 
 
-        //adds rows for each list item of stations
+
         listStations.forEach{
             itemListBuilder.addItem(
                 Row.Builder()
@@ -68,11 +58,9 @@ class PlaceScreen(carContext: CarContext, val stations: StationList) : Screen(ca
 
         return PlaceListMapTemplate.Builder()
             .setActionStrip(actionStrip)
-//        .setHeaderAction(headerAction)
             .setItemList(itemList)
             .setAnchor(placeList[0])
             .setTitle("Fuel stations")
-//            .setCurrentLocationEnabled(true)
             .build()
     }
 
