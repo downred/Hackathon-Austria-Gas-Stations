@@ -8,7 +8,7 @@ This Android-Auto app shows a list of Austria's gas stations. It also enables th
 ![3](https://user-images.githubusercontent.com/81407688/184648621-31066931-23c9-4140-ab01-78e330bfea08.png)
 
 ## References
----
+
 - Phlipp Schodl, Product Owner of OpenResearch LLC (philipp.schodl@openresearch.com)
 
 - Arlind Hajredinaj (arlind.hajredinaj@soundcloud.com)
