@@ -10,4 +10,5 @@ This Android-Auto app shows a list of Austria's gas stations. It also enables th
 ## References
 ---
 Phlipp Schodl, Product Owner of OpenResearch LLC (philipp.schodl@openresearch.com)
+
 Arlind Hajredinaj (arlind.hajredinaj@soundcloud.com)
